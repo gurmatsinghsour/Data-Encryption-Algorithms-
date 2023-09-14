@@ -2,7 +2,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/gurmatsinghsour/Data-Encryption-Algorithms-)](https://github.com/gurmatsinghsour/Data-Encryption-Algorithms-/stargazers)
 
-This repository contains Python implementations of various data encryption algorithms. These algorithms are part of our research paper and are provided here for educational and research purposes. Collaborators on this project include [gurmatsinghsour](https://github.com/gurmatsinghsour) and [Dmt2002](https://github.com/Dmt2002).
+This repository contains Python implementations of various data encryption algorithms. These algorithms are part of our research paper and are provided here for educational and research purposes. Collaborators on this project include [Gurmat](https://github.com/gurmatsinghsour) and [Digvijay](https://github.com/Dmt2002).
 
 ## Table of Contents
 
