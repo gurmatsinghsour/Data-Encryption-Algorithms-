@@ -1,6 +1,5 @@
 # Data Encryption Algorithms
 
-[![GitHub license](https://img.shields.io/github/license/gurmatsinghsour/Data-Encryption-Algorithms-)](https://github.com/gurmatsinghsour/Data-Encryption-Algorithms-/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/gurmatsinghsour/Data-Encryption-Algorithms-)](https://github.com/gurmatsinghsour/Data-Encryption-Algorithms-/stargazers)
 
 This repository contains Python implementations of various data encryption algorithms. These algorithms are part of our research paper and are provided here for educational and research purposes. Collaborators on this project include [gurmatsinghsour](https://github.com/gurmatsinghsour) and [Dmt2002](https://github.com/Dmt2002).
@@ -10,8 +9,6 @@ This repository contains Python implementations of various data encryption algor
 - [Algorithms](#algorithms)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Algorithms
 
