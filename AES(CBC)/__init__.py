@@ -3,6 +3,7 @@ import psutil
 from cryptography.hazmat.primitives import padding
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.backends import default_backend
+import os
 
 def aes_encrypt(key, plaintext, iv):
     backend = default_backend()
@@ -58,12 +59,12 @@ if __name__ == "__main__":
     # Record the start time
     start_time = record_start_time()
     
-    # AES encryption in CBC mode (Change the IV as needed)
+    # AES encryption in CBC mode with a random IV
     key = b'sixteenbytekey!!'
-    plaintext = b'Hello, world!'
-    iv = b'8byteiv'  # Use a random IV for each encryption operation
+    plaintext = b'TCETMUMBAI_GD'
+    iv = os.urandom(16)  # Generate a random 16-byte IV
     ciphertext = aes_encrypt(key, plaintext, iv)
-    print(f"Ciphertext: {ciphertext}")
+    print(f"Ciphertext: {ciphertext.hex()}")
 
     # Record the end time
     execution_time = record_end_time(start_time)
