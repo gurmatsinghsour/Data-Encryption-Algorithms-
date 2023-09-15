@@ -50,7 +50,7 @@ if __name__ == "__main__":
     
     # Blowfish encryption
     key = get_random_bytes(16)  # 128-bit key for Blowfish
-    plaintext = b'Hello, world!'
+    plaintext = b'TCETMUMBAI_GD'
     
     ciphertext = encrypt_blowfish(key, plaintext)
     print("Ciphertext:", ciphertext.hex())
