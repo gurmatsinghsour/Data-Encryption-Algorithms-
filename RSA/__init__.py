@@ -64,7 +64,7 @@ if __name__ == "__main__":
     private_key, public_key = generate_rsa_key_pair()
 
     # Usage
-    plaintext = b'Hello, world!'
+    plaintext = b'TCETMUMBAI_GD'
     ciphertext = rsa_encrypt(public_key, plaintext)
     print("Ciphertext:", ciphertext.hex())
 
