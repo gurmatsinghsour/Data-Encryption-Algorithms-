@@ -60,7 +60,7 @@ if __name__ == "__main__":
     
     # AES encryption in ECB mode
     key = b'sixteenbytekey!!'
-    plaintext = b'Hello, world!'
+    plaintext = b'TCETMUMBAI_GD'
     ciphertext = aes_encrypt(key, plaintext)
     print(f"Ciphertext: {ciphertext}")
 
