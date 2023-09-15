@@ -1,0 +1,88 @@
+
+C:\Users\LAB-305\Desktop\RP\3DES (CBC)>cd ..
+
+C:\Users\LAB-305\Desktop\RP>cd "3DES (CBC)"
+
+C:\Users\LAB-305\Desktop\RP\3DES (CBC)>python __init__.py
+Ciphertext: 317bb242a6187b380c528d53c7670cb6
+Execution Time: 0.0781 seconds
+Average CPU Usage: 5.64%
+Average Used Memory: 3406785740.8 bytes
+Bytes Sent: 415 bytes
+Bytes Received: 324490 bytes
+
+C:\Users\LAB-305\Desktop\RP\3DES (CBC)>cd ..
+
+C:\Users\LAB-305\Desktop\RP>cd "3DES (ECB)"
+
+C:\Users\LAB-305\Desktop\RP\3DES (ECB)>python __init__.py
+Ciphertext: b'\x99\tp\xe0\xd02(\xcf/\x98\x05A\x9dD\x1a\xf2'
+Execution Time: 0.0938 seconds
+Average CPU Usage: 7.37%
+Average Used Memory: 3350474342.4 bytes
+Bytes Sent: 84 bytes
+Bytes Received: 273325 bytes
+
+C:\Users\LAB-305\Desktop\RP\3DES (ECB)>cd ..
+
+C:\Users\LAB-305\Desktop\RP>cd "AES(CBC)"
+
+C:\Users\LAB-305\Desktop\RP\AES(CBC)>python __init__.py
+Ciphertext: d8077e4f5a0a7992bf0d4260a4eafde6
+Execution Time: 0.0938 seconds
+Average CPU Usage: 5.880000000000001%
+Average Used Memory: 3344030105.6 bytes
+Bytes Sent: 54 bytes
+Bytes Received: 265642 bytes
+
+C:\Users\LAB-305\Desktop\RP\AES(CBC)>cd ..
+
+C:\Users\LAB-305\Desktop\RP>cd "AES(ECB)"
+
+C:\Users\LAB-305\Desktop\RP\AES(ECB)>python __init__.py
+Ciphertext: b'\x1a\x0c\xa2\xa8vS\x90\x08\x99Y\x97\x85\xa6\xa3\xf9r'
+Execution Time: 0.0937 seconds
+Average CPU Usage: 3.3299999999999996%
+Average Used Memory: 3354880409.6 bytes
+Bytes Sent: 1396 bytes
+Bytes Received: 313634 bytes
+
+C:\Users\LAB-305\Desktop\RP\AES(ECB)>cd ..
+
+C:\Users\LAB-305\Desktop\RP>cd Blowfish
+
+C:\Users\LAB-305\Desktop\RP\Blowfish>python __init__.py
+Ciphertext: a52c11a74678c4c7ded3a7f847e3cf0b
+Decrypted plaintext: TCETMUMBAI_GD
+Execution Time: -1694759478.9376 seconds
+Average CPU Usage: 6.05%
+Average Used Memory: 3344232038.4 bytes
+Bytes Sent: 0 bytes
+Bytes Received: 255403 bytes
+
+C:\Users\LAB-305\Desktop\RP\Blowfish>cd ..
+
+C:\Users\LAB-305\Desktop\RP>cd RSA
+
+C:\Users\LAB-305\Desktop\RP\RSA>python __init__.py
+Ciphertext: 1f813d4e49b3e58d333d8e9eec8e7c7c4b0d7fa420f0676f176b2bef5cfa8427d485a50644ebb0673c5103bb6b143c4427820a86592f112a2f8fa1f885bf23d536022680217f7811c2de78e038f148112185ada826a5f532d8feb85273c6c3fbe7df23cbd5f39d9c2cc015c74cbd6708eeb86ddd8b3b2210d57a7bd2ef71571f006e0a76bf0d1d5320f51daad106b279a4eb15320fcdef50bfd10f2673ab53d9166ed3e2b84c15ab9009b1991cf0a0e4a46b7472db80b96199847161b5933f4afd503c05f578c06b8e53e06baea07b1d04d8cace1a4e1133cf3cbad99c89fd56145afb9f2e0d8f902cd8b881f389994caa316d58b63f7c64f871917a926bbcfe
+Decrypted plaintext: TCETMUMBAI_GD
+Execution Time: -1694759494.9446 seconds
+Average CPU Usage: 5.359999999999999%
+Average Used Memory: 3353017958.4 bytes
+Bytes Sent: 210 bytes
+Bytes Received: 329460 bytes
+
+C:\Users\LAB-305\Desktop\RP\RSA>cd ..
+
+C:\Users\LAB-305\Desktop\RP>cd Twofish
+
+C:\Users\LAB-305\Desktop\RP\Twofish>python __init__.py
+TCETMUMBAI_GD ['00101010010001010111111001011001', '10011010011111100111111001000010', '00101001010111110110100000101010', '11100001010100010110100100100000']
+Execution Time: 0.0312 seconds
+Average CPU Usage: 6.459999999999999%
+Average Used Memory: 3340116787.2 bytes
+Bytes Sent: 378 bytes
+Bytes Received: 244131 bytes
+
+C:\Users\LAB-305\Desktop\RP\Twofish>
