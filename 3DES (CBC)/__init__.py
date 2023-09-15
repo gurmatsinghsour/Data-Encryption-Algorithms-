@@ -3,17 +3,10 @@ import psutil
 from cryptography.hazmat.primitives import padding
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.backends import default_backend
-from cryptography.hazmat.primitives import hashes
-from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
-from cryptography.hazmat.primitives import serialization
-from cryptography.hazmat.primitives.asymmetric import dh
-from cryptography.hazmat.primitives.asymmetric import dh
-from cryptography.hazmat.primitives import serialization
-from cryptography.hazmat.primitives.asymmetric import dh
-from cryptography.hazmat.primitives import serialization
-from cryptography.hazmat.primitives.asymmetric import dh
+from cryptography.hazmat.primitives.asymmetric import padding as asymmetric_padding
+import os
 
-def triple_des_encrypt(key, plaintext, iv):
+def des3_encrypt(key, plaintext, iv):
     backend = default_backend()
     cipher = Cipher(algorithms.TripleDES(key), modes.CBC(iv), backend=backend)
     encryptor = cipher.encryptor()
@@ -29,12 +22,25 @@ def record_end_time(start_time):
     return time.time() - start_time
 
 def get_average_cpu_usage(num_samples=10, interval=0.1):
-    total_cpu_percent = sum(psutil.cpu_percent(interval=interval) for _ in range(num_samples))
-    return total_cpu_percent / num_samples
+    total_cpu_percent = 0
+
+    for _ in range(num_samples):
+        cpu_percent = psutil.cpu_percent(interval=interval)
+        total_cpu_percent += cpu_percent
+
+    average_cpu_percent = total_cpu_percent / num_samples
+    return average_cpu_percent
 
 def get_average_memory_usage(num_samples=10, interval=0.1):
-    total_used_memory = sum(psutil.virtual_memory().used for _ in range(num_samples))
-    return total_used_memory / num_samples
+    total_used_memory = 0
+
+    for _ in range(num_samples):
+        memory_info = psutil.virtual_memory()
+        total_used_memory += memory_info.used
+        time.sleep(interval)
+
+    average_used_memory = total_used_memory / num_samples
+    return average_used_memory
 
 def monitor_bandwidth_usage():
     before_network_stats = psutil.net_io_counters()
@@ -54,12 +60,12 @@ if __name__ == "__main__":
     # Record the start time
     start_time = record_start_time()
     
-    # 3DES encryption
-    key = b'sixteenbytekey!x'
-    plaintext = b'Hello, world!'
-    iv = b'8byteiv'  # You should use a random IV in practice
-    ciphertext = triple_des_encrypt(key, plaintext, iv)
-    print(f"Ciphertext: {ciphertext}")
+    # Triple DES (3DES) encryption in CBC mode with a random IV
+    key = b'sixteenbytekey!!'  # 3DES uses a 24-byte key
+    plaintext = b'TCETMUMBAI_GD'
+    iv = os.urandom(8)  # Generate a random 8-byte IV for 3DES
+    ciphertext = des3_encrypt(key, plaintext, iv)
+    print(f"Ciphertext: {ciphertext.hex()}")
 
     # Record the end time
     execution_time = record_end_time(start_time)
