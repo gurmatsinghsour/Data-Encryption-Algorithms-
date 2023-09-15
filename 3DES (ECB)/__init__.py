@@ -47,7 +47,7 @@ if __name__ == "__main__":
     
     # 3DES encryption
     key = b'sixteenbytekey!x'
-    plaintext = b'Hello, world!'
+    plaintext = b'TCETMUMBAI_GD'
     ciphertext = triple_des_encrypt(key, plaintext)
     print(f"Ciphertext: {ciphertext}")
 
