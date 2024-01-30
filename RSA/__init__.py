@@ -57,14 +57,14 @@ def monitor_bandwidth_usage():
     print(f"Bytes Received: {bytes_received} bytes")
 
 if __name__ == "__main__":
-    # Record the start time
-    start_time = record_start_time()
-
     # Generate RSA key pair
     private_key, public_key = generate_rsa_key_pair()
 
+    # Record the start time
+    start_time = record_start_time()
+
     # Usage
-    plaintext = b'TCETMUMBAI_GD'
+    plaintext = b'THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION'
     ciphertext = rsa_encrypt(public_key, plaintext)
     print("Ciphertext:", ciphertext.hex())
 
@@ -75,7 +75,7 @@ if __name__ == "__main__":
     end_time = record_end_time(start_time)
 
     # Calculate and print the execution time
-    execution_time = end_time - start_time
+    execution_time = end_time
     print(f"Execution Time: {execution_time:.4f} seconds")
 
     # CPU Usage

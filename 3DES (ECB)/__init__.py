@@ -46,8 +46,8 @@ if __name__ == "__main__":
     start_time = record_start_time()
     
     # 3DES encryption
-    key = b'sixteenbytekey!x'
-    plaintext = b'TCETMUMBAI_GD'
+    key = b's!xt33n|3y|3k3y@'
+    plaintext = b'THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION'
     ciphertext = triple_des_encrypt(key, plaintext)
     print(f"Ciphertext: {ciphertext}")
 

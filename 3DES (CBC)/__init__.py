@@ -60,9 +60,9 @@ if __name__ == "__main__":
     # Record the start time
     start_time = record_start_time()
     
-    # Triple DES (3DES) encryption in CBC mode with a random IV
-    key = b'sixteenbytekey!!'  # 3DES uses a 24-byte key
-    plaintext = b'TCETMUMBAI_GD'
+    key = b's!xt33n|3y|3k3y@' # 3DES uses a 24-byte key
+    plaintext = b'THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION'
+
     iv = os.urandom(8)  # Generate a random 8-byte IV for 3DES
     ciphertext = des3_encrypt(key, plaintext, iv)
     print(f"Ciphertext: {ciphertext.hex()}")

@@ -24,7 +24,9 @@ def record_end_time(start_time):
 
 def get_average_cpu_usage(num_samples=10, interval=0.1):
     total_cpu_percent = sum(psutil.cpu_percent(interval=interval) for _ in range(num_samples))
-    return total_cpu_percent / num_samples
+    average_cpu_percent = total_cpu_percent / num_samples
+    return min(100, average_cpu_percent)
+
 
 def get_average_memory_usage(num_samples=10, interval=0.1):
     total_used_memory = sum(psutil.virtual_memory().used for _ in range(num_samples))
@@ -49,8 +51,8 @@ if __name__ == "__main__":
     start_time = record_start_time()
     
     # Blowfish encryption
-    key = get_random_bytes(16)  # 128-bit key for Blowfish
-    plaintext = b'TCETMUMBAI_GD'
+    key = b's!xt33n|3y|3k3y@'  # 128-bit key for Blowfish
+    plaintext = b'THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION'
     
     ciphertext = encrypt_blowfish(key, plaintext)
     print("Ciphertext:", ciphertext.hex())
@@ -58,11 +60,11 @@ if __name__ == "__main__":
     decrypted_plaintext = decrypt_blowfish(key, ciphertext)
     print("Decrypted plaintext:", decrypted_plaintext.decode())
 
-    # Record the end time
+    # Record the end time after the encryption and decryption operations
     end_time = record_end_time(start_time)
 
     # Calculate and print the execution time
-    execution_time = end_time - start_time
+    execution_time = end_time
     print(f"Execution Time: {execution_time:.4f} seconds")
 
     # CPU Usage
