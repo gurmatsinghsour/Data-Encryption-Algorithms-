@@ -1,0 +1,69 @@
+3DES CBC
+
+Ciphertext: 2930963de9b4fa9f862610dfec058ea3
+Execution Time: 0.0960 seconds
+Average CPU Usage: 59.64%
+Average Used Memory: 2479011430.4 bytes
+Bytes Sent: 7982 bytes
+Bytes Received: 369172 bytes
+
+3DES ECB
+
+Ciphertext: b' \x1d\xa2K\xa9\x16\xdcZ\xa8{tY=\xf2+)\xfb\x84\xfd\xac=\xd8\xe1\xe3;)\x06\xf8\xd1\x86M;'
+Execution Time: 0.0789 seconds
+Average CPU Usage: 44.730000000000004%
+Average Used Memory: 2528496025.6 bytes
+Bytes Sent: 4064 bytes
+Bytes Received: 301950 bytes
+
+
+AES CBC
+
+Ciphertext: 05080ac91144ccc2435e0719d382eff6473aab5ce12a0e78ab025e7378db4549
+Execution Time: 0.1005 seconds
+Average CPU Usage: 49.23%
+Average Used Memory: 2528993280.0 bytes
+Bytes Sent: 268 bytes
+Bytes Received: 296334 bytes
+
+
+AES ECB
+
+Ciphertext: b'\xcf%o\x0c\xd0\xcf\xf0\xafmZyt0g\x9b\xac\xa9\x81\x94\xbd\r\x86ia\xda<O\xda\xe5guj'
+Execution Time: 0.1039 seconds
+Average CPU Usage: 57.81%
+Average Used Memory: 2535886028.8 bytes
+Bytes Sent: 274 bytes
+Bytes Received: 343219 bytes
+
+
+BLOWFISH
+
+Ciphertext: 25d789fc955b97959af4875f896c248c1102d2253037198fe0913d941aaf2afa
+Decrypted plaintext: A@J#!K@J#BB$J@!J#BKJJB@#!K
+Execution Time: 0.0996 seconds
+Average CPU Usage: 33.58%
+Average Used Memory: 2533191270.4 bytes
+Bytes Sent: 5719 bytes
+Bytes Received: 287147 bytes
+
+
+RSA
+
+Ciphertext: 719eba06c3f2d39e09127b7e63849e09731df6cd06af10cde76c0cc42d61f127f238c56ed9d4766bc0009929bd38f2e0b3dc33582b4e6dfefb85daf0820327497ef7994bac3b66d2910b99d737760cc5d1e0dda78616c76bd18eb39f1ff8c8765872f48af90cf83d048919f4fcf886dc9ba9865af7a6d5dba484f952018c5ea6dc92dbd7af3115c1763ff7b70d62e52224b8975e5eb6c3207282420686f6f6c7b438450200f206b970cf5cbf3a975fba4dab0f6296d6e88f339412ff8f51ce6d88b9e919abbafc1003523f4d60d8cc60d383d9fd0b2e197b55452a38ed6e16a89c1c402338d3fd31b161e0d765b0916b78db9ebdcc2b4af0b08abe054ce46b4a
+Decrypted plaintext: A@J#!K@J#BB$J@!J#BKJJB@#!K
+Execution Time: 0.0000 seconds
+Average CPU Usage: 29.880000000000003%
+Average Used Memory: 2545866752.0 bytes
+Bytes Sent: 5651 bytes
+Bytes Received: 279873 bytes
+
+
+TWOFISH
+
+A@J#!K@J#BB$J@!J#BKJJB@#!K ['00101010010001010111111001011001', '10011010011111100111111001000010', '00101001010111110110100000101010', '11100001010100010110100100100000']
+Execution Time: 0.0345 seconds
+Average CPU Usage: 56.19%
+Average Used Memory: 2543474688.0 bytes
+Bytes Sent: 2582 bytes
+Bytes Received: 317353 bytes

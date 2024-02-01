@@ -1,0 +1,60 @@
+
+3DES CBC
+Ciphertext: 22e043ae7a792ed021985ed7f32f24c9d5fe0d6b493b6e37806d5c8c85b074975002fbcdac149cfe5eae400e1447606b4b12a82748b637ec
+Execution Time: 0.6720 seconds
+Average CPU Usage: 57.779999999999994%
+Average Used Memory: 2974532403.2 bytes
+Bytes Sent: 8281 bytes
+Bytes Received: 299395 bytes
+
+3DES ECB
+Ciphertext: b'O\x89)_)\xadN\xc4\xcaE\n[e\xc1g\xe3}\x84\xc3meY=\xd2\xf0\xb8\x1f\x9bO\xf99\x87Mg\x83\x05\x17\xc9\xbd\xb1\xf8\xe1\x11\xf5\x90\xc4\xd2\xae7;}EU\x19\x9e\xe0'
+Execution Time: 2.2889 seconds
+Average CPU Usage: 26.910000000000004%
+Average Used Memory: 2954669670.4 bytes
+Bytes Sent: 262 bytes
+Bytes Received: 269933 bytes
+
+AES CBC
+Ciphertext: b0284808956b834237fcc830d68eef7e85cb13b842236d41c5990ecba5e93a6c1b8e076ce527a9877693b03409522dd4e76a6d104e3dd925f84f4a22a2d02608
+Execution Time: 0.2208 seconds
+Average CPU Usage: 11.29%
+Average Used Memory: 2718876467.2 bytes
+Bytes Sent: 18463 bytes
+Bytes Received: 300786 bytes
+
+AES ECB
+Ciphertext: b'n\x8bbK\x9e\x8a\xde5K\xbd\x1e\xad:B\xe5u$\x8c\xb8\xc9\xcf\xab1Y\xc0D4R\xdb\xfa\x0c\xa7\x8c\x92\xa7\x1c\xbdW\xc0\xcfFJg\xfe\xf7\xff\x81\xe4\x13\xfa\xad(\xb3\xfd\xe8\xc1\xc0g\x00\xf4\x16C\xe6\x9e'
+Execution Time: 0.1452 seconds
+Average CPU Usage: 57.120000000000005%
+Average Used Memory: 2701755187.2 bytes
+Bytes Sent: 268 bytes
+Bytes Received: 269981 bytes
+
+
+RSA
+
+Ciphertext: 5894e64fe0d4e3e99e1da7669c5b73a0b1071bc2342ae722342763592ed23b9ba0ee958c5cdf65a9409502a48022f672fecbce2b41caaa045974354392871e60a78d35550fa24b35f7f90280f5e0023c3ad77821c24c980727233074d9d506e39ceac40f9463e16d5b991bbe4cf48d4ded836f2657f086d3f9aa55390a34d7b6974f9411f2486a142f92373acc32e5b8a1f60fb2b45089a6a355adeef1190bafdc36813fea5cbc4908e9a650976e1633d7c608c042e38926cd96d9bb8bfcaa18378d1c2f272221f008b783661f16827f4e3869c599e2529ec905539b610a1ddf58280570a9b92447e01a6298f912f1c64b53c2f236b8a3e243271a15df461b33
+Decrypted plaintext: THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION
+Execution Time: 0.0000 seconds
+Average CPU Usage: 41.540000000000006%
+Average Used Memory: 2699299635.2 bytes
+Bytes Sent: 4373 bytes
+Bytes Received: 277652 bytes
+
+Twofish
+THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION ['00101010010001010111111001011001', '10011010011111100111111001000010', '00101001010111110110100000101010', '11100001010100010110100100100000']
+Execution Time: 0.0327 seconds
+Average CPU Usage: 62.3%
+Average Used Memory: 2723656499.2 bytes
+Bytes Sent: 3999 bytes
+Bytes Received: 253897 bytes
+
+Blowfish
+Ciphertext: 1eded288be58f13c3d1e60f6846d959a92a4aa5273f97a00d1f57eab47904abcca242027acba123c2bcee60875402fe4
+Decrypted plaintext: THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION
+Execution Time: 0.2268 seconds
+Average CPU Usage: 99.09%
+Average Used Memory: 2546847334.4 bytes
+Bytes Sent: 22706 bytes
+Bytes Received: 278114 bytes

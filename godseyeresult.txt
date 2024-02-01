@@ -1,0 +1,55 @@
+Input 1 
+
+3DES (CBC)
+
+3DES (ECB)
+
+AES (CBC)
+
+AES (ECB)
+
+Blowfish
+
+RSA
+
+
+Twofish
+___________________________________________________________________________
+
+
+Input 2 
+
+
+3DES (CBC)
+
+3DES (ECB)
+
+AES (CBC)
+
+AES (ECB)
+
+Blowfish
+
+RSA
+
+Twofish
+
+
+
+
+___________________________________________________________________________
+Input 3 
+
+3DES (CBC)
+
+3DES (ECB)
+
+AES (CBC)
+
+AES (ECB)
+
+Blowfish
+
+RSA
+
+Twofish

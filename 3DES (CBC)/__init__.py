@@ -60,8 +60,20 @@ if __name__ == "__main__":
     # Record the start time
     start_time = record_start_time()
     
-    key = b's!xt33n|3y|3k3y@' # 3DES uses a 24-byte key
-    plaintext = b'THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION'
+    # KEY 1
+
+    # key = b'sixteenbytekey!!'
+    # plaintext = b'TCETMUMBAI_GD'
+
+    # Key 2
+
+    # key = b's!xt33n|3y|3k3y@'
+    # plaintext = b'THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION'
+
+    # Key 3 
+
+    # key = b's!xt33n|3y|3k3y@' 
+    # plaintext = b'A@J#!K@J#BB$J@!J#BKJJB@#!K'
 
     iv = os.urandom(8)  # Generate a random 8-byte IV for 3DES
     ciphertext = des3_encrypt(key, plaintext, iv)

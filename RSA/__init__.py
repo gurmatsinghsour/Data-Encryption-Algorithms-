@@ -64,7 +64,15 @@ if __name__ == "__main__":
     start_time = record_start_time()
 
     # Usage
-    plaintext = b'THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION'
+    # KEY 1
+    # plaintext = b'TCETMUMBAI_GD'
+
+    # Key 2
+    # plaintext = b'THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION'
+
+    # Key 3 
+    # plaintext = b'A@J#!K@J#BB$J@!J#BKJJB@#!K'
+
     ciphertext = rsa_encrypt(public_key, plaintext)
     print("Ciphertext:", ciphertext.hex())
 

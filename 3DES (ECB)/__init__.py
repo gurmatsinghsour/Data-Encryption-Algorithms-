@@ -44,10 +44,24 @@ def monitor_bandwidth_usage():
 if __name__ == "__main__":
     # Record the start time
     start_time = record_start_time()
+
+    # KEY 1
+
+    # key = b'sixteenbytekey!!'
+    # plaintext = b'TCETMUMBAI_GD'
+
+    # Key 2
+
+    # key = b's!xt33n|3y|3k3y@'
+    # plaintext = b'THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION'
+
+    # Key 3 
+
+    # key = b's!xt33n|3y|3k3y@' 
+    # plaintext = b'A@J#!K@J#BB$J@!J#BKJJB@#!K'
+
     
-    # 3DES encryption
-    key = b's!xt33n|3y|3k3y@'
-    plaintext = b'THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION'
+
     ciphertext = triple_des_encrypt(key, plaintext)
     print(f"Ciphertext: {ciphertext}")
 

@@ -1,19 +1,25 @@
 import time
 import psutil
-from Crypto.Cipher import Blowfish
-from Crypto.Random import get_random_bytes
-from Crypto.Util.Padding import pad, unpad
+from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+from cryptography.hazmat.backends import default_backend
+from cryptography.hazmat.primitives import padding
 
 def encrypt_blowfish(key, plaintext):
-    cipher = Blowfish.new(key, Blowfish.MODE_ECB)
-    padded_plaintext = pad(plaintext, Blowfish.block_size)
-    ciphertext = cipher.encrypt(padded_plaintext)
+    cipher = Cipher(algorithms.Blowfish(key), mode=modes.ECB(), backend=default_backend())
+    encryptor = cipher.encryptor()
+    padder = padding.PKCS7(algorithms.Blowfish.block_size).padder()
+    padded_plaintext = padder.update(plaintext) + padder.finalize()
+    ciphertext = encryptor.update(padded_plaintext) + encryptor.finalize()
     return ciphertext
 
 def decrypt_blowfish(key, ciphertext):
-    cipher = Blowfish.new(key, Blowfish.MODE_ECB)
-    padded_plaintext = cipher.decrypt(ciphertext)
-    plaintext = unpad(padded_plaintext, Blowfish.block_size)
+    cipher = Cipher(algorithms.Blowfish(key), mode=modes.ECB(), backend=default_backend())
+    decryptor = cipher.decryptor()
+    padded_plaintext = decryptor.update(ciphertext) + decryptor.finalize()
+
+    unpadder = padding.PKCS7(algorithms.Blowfish.block_size).unpadder()
+    plaintext = unpadder.update(padded_plaintext) + unpadder.finalize()
+    # plaintext = decryptor.update(ciphertext) + decryptor.finalize()
     return plaintext
 
 def record_start_time():
@@ -27,20 +33,19 @@ def get_average_cpu_usage(num_samples=10, interval=0.1):
     average_cpu_percent = total_cpu_percent / num_samples
     return min(100, average_cpu_percent)
 
-
 def get_average_memory_usage(num_samples=10, interval=0.1):
     total_used_memory = sum(psutil.virtual_memory().used for _ in range(num_samples))
     return total_used_memory / num_samples
 
 def monitor_bandwidth_usage():
     before_network_stats = psutil.net_io_counters()
-    
+
     # Perform encryption/decryption operations here
     # For example, simulate by sleeping for a brief interval
     time.sleep(5)  # Simulate 5 seconds of activity
-    
+
     after_network_stats = psutil.net_io_counters()
-    
+
     bytes_sent = after_network_stats.bytes_sent - before_network_stats.bytes_sent
     bytes_received = after_network_stats.bytes_recv - before_network_stats.bytes_recv
 
@@ -49,14 +54,25 @@ def monitor_bandwidth_usage():
 if __name__ == "__main__":
     # Record the start time
     start_time = record_start_time()
-    
-    # Blowfish encryption
-    key = b's!xt33n|3y|3k3y@'  # 128-bit key for Blowfish
-    plaintext = b'THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION'
-    
+
+    # KEY 1
+
+    # key = b'sixteenbytekey!!'
+    # plaintext = b'TCETMUMBAI_GD'
+
+    # Key 2
+
+    # key = b's!xt33n|3y|3k3y@'
+    # plaintext = b'THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION'
+
+    # Key 3 
+
+    # key = b's!xt33n|3y|3k3y@' 
+    # plaintext = b'A@J#!K@J#BB$J@!J#BKJJB@#!K'
+
     ciphertext = encrypt_blowfish(key, plaintext)
     print("Ciphertext:", ciphertext.hex())
-    
+
     decrypted_plaintext = decrypt_blowfish(key, ciphertext)
     print("Decrypted plaintext:", decrypted_plaintext.decode())
 

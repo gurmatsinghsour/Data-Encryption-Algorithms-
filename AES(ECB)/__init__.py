@@ -59,8 +59,21 @@ if __name__ == "__main__":
     start_time = record_start_time()
     
     # AES encryption in ECB mode
-    key = b's!xt33n|3y|3k3y@'
-    plaintext = b'THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION'
+    # KEY 1
+
+    # key = b'sixteenbytekey!!'
+    # plaintext = b'TCETMUMBAI_GD'
+
+    # Key 2
+
+    # key = b's!xt33n|3y|3k3y@'
+    # plaintext = b'THIS_IS_A_HARD_AND_BIG_PLAIN_TEXT_FOR_ENCRYPTION'
+
+    # Key 3 
+
+    # key = b's!xt33n|3y|3k3y@' 
+    # plaintext = b'A@J#!K@J#BB$J@!J#BKJJB@#!K'
+    
     ciphertext = aes_encrypt(key, plaintext)
     print(f"Ciphertext: {ciphertext}")
 
